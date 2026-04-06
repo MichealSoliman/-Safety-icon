@@ -1,0 +1,352 @@
+/* ==================== BASE STYLES ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --fire-600: #e51b1b;
+  --fire-700: #c0392b;
+  --ember-500: #f97316;
+  --coal-800: #1c1917;
+  --coal-900: #0c0a09;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--coal-900);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ==================== SCROLLBAR ==================== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--coal-900); }
+::-webkit-scrollbar-thumb { background: var(--fire-700); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ember-500); }
+
+/* ==================== NAVBAR ==================== */
+#navbar.scrolled {
+  background: rgba(12, 10, 9, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(192, 57, 43, 0.15);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(192, 57, 43, 0.15);
+}
+
+#navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: var(--fire-600);
+  transition: width 0.3s ease;
+}
+
+#navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile menu states */
+.mobile-menu-closed {
+  max-height: 0;
+}
+.mobile-menu-open {
+  max-height: 600px;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero-bg {
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  transform: scale(1.05);
+  animation: heroZoom 8s ease-in-out infinite alternate;
+}
+
+.hero-slide.active {
+  opacity: 1;
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+
+/* Hero entrance animations */
+.hero-anim {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hero-anim-1 { animation: heroEntrance 0.8s ease forwards 0.2s; }
+.hero-anim-2 { animation: heroEntrance 0.8s ease forwards 0.4s; }
+.hero-anim-3 { animation: heroEntrance 0.8s ease forwards 0.6s; }
+.hero-anim-4 { animation: heroEntrance 0.8s ease forwards 0.8s; }
+.hero-anim-5 { animation: heroEntrance 0.8s ease forwards 1.0s; }
+
+@keyframes heroEntrance {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== FIRE PARTICLES ==================== */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ember-500);
+  animation: particleFloat linear infinite;
+  pointer-events: none;
+  filter: blur(1px);
+}
+
+.particle-1 { left: 15%; bottom: 20%; width: 8px; height: 8px; animation-duration: 6s; animation-delay: 0s; background: #ef4444; }
+.particle-2 { left: 30%; bottom: 10%; width: 5px; height: 5px; animation-duration: 8s; animation-delay: 1s; background: #f97316; }
+.particle-3 { left: 50%; bottom: 30%; width: 10px; height: 10px; animation-duration: 7s; animation-delay: 2s; background: #fbbf24; }
+.particle-4 { left: 70%; bottom: 15%; width: 6px; height: 6px; animation-duration: 9s; animation-delay: 0.5s; background: #ef4444; }
+.particle-5 { left: 85%; bottom: 25%; width: 7px; height: 7px; animation-duration: 5s; animation-delay: 1.5s; background: #f97316; }
+
+@keyframes particleFloat {
+  0%   { transform: translateY(0) scale(1); opacity: 0.8; }
+  50%  { transform: translateY(-120px) scale(1.3); opacity: 0.5; }
+  100% { transform: translateY(-250px) scale(0); opacity: 0; }
+}
+
+/* ==================== REVEAL ANIMATIONS ==================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children reveal */
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal:nth-child(4) { transition-delay: 0.3s; }
+.reveal:nth-child(5) { transition-delay: 0.4s; }
+.reveal:nth-child(6) { transition-delay: 0.5s; }
+
+/* ==================== GRID PATTERN ==================== */
+.grid-pattern {
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ==================== SERVICES SLIDER ==================== */
+.services-slider {
+  cursor: grab;
+  user-select: none;
+}
+
+.services-slider:active {
+  cursor: grabbing;
+}
+
+/* ==================== HERO DOTS ==================== */
+.hero-dot.active {
+  width: 2rem;
+  background: #ef4444;
+}
+
+/* ==================== WRITING MODE ==================== */
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* ==================== CUSTOM ANIMATIONS ==================== */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(192,57,43,0.4), 0 0 30px rgba(192,57,43,0.2); }
+  50%       { box-shadow: 0 0 30px rgba(192,57,43,0.7), 0 0 60px rgba(249,115,22,0.4); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* ==================== WHATSAPP FLOAT ==================== */
+#whatsapp-float {
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+#whatsapp-float:hover {
+  animation: none;
+  transform: scale(1.1);
+}
+
+/* ==================== GRADIENT TEXT ==================== */
+.gradient-text {
+  background: linear-gradient(90deg, #ef4444, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==================== FORM INPUTS RTL ==================== */
+input, textarea, select {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+select option {
+  background: #1c1917;
+  color: white;
+}
+
+/* ==================== HOVER SHINE EFFECT ==================== */
+.service-card > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.04),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: right 0.7s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.service-card > div:hover::before {
+  right: 150%;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 640px) {
+  .hero-anim-2 h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ==================== FIRE LINE DIVIDER ==================== */
+.fire-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ef4444, #f97316, #ef4444, transparent);
+  animation: fireLine 3s ease infinite;
+}
+
+@keyframes fireLine {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1; }
+}
+
+/* ==================== BUTTON RIPPLE ==================== */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.btn-ripple:active::after {
+  transform: scale(2);
+}
+
+/* ==================== COUNTER ANIMATION ==================== */
+.counter {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==================== PAGE LOADER ==================== */
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--coal-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-flame {
+  width: 50px;
+  height: 70px;
+  position: relative;
+  animation: flameAnim 1s ease-in-out infinite alternate;
+}
+
+@keyframes flameAnim {
+  from { transform: scaleY(1); filter: brightness(1); }
+  to   { transform: scaleY(1.1); filter: brightness(1.3); }
+}
+
+/* ==================== SCROLL PROGRESS ==================== */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ef4444, #f97316);
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* ==================== MENU TOGGLE ANIMATION ==================== */
+#menu-toggle.active .menu-bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+#menu-toggle.active .menu-bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+#menu-toggle.active .menu-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}

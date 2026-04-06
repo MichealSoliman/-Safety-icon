@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>صقر الرياض | مكافحة الحرائق - أنظمة السلامة والحماية في الرياض</title>
+    <meta name="description" content="شركة متخصصة في مكافحة الحرائق وأنظمة السلامة في الرياض. نقدم حلولاً متكاملة للحماية من الحرائق، أنظمة الإنذار، الإطفاء، والصيانة بأعلى المعايير.">
+    <meta name="keywords" content="مكافحة الحرائق الرياض, أنظمة السلامة, الحماية من الحرائق, إطفاء الحريق, صيانة أنظمة الإطفاء, الرياض">
+    <meta name="author" content="صقر الرياض">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="صقر الرياض | مكافحة الحرائق وأنظمة السلامة">
+    <meta property="og:description" content="حماية ممتلكاتك وأرواحك بأحدث تقنيات مكافحة الحرائق في الرياض">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=1200">
+    <!-- Tailwind CSS + Font Awesome + Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        fire: {
+                            red: '#dc2626',
+                            darkred: '#991b1b',
+                            orange: '#ea580c',
+                            darkorange: '#c2410c',
+                            black: '#1f2937',
+                        }
+                    },
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'slide-right': 'slideRight 0.6s ease-out',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideRight: {
+                            '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        glow: {
+                            '0%': { textShadow: '0 0 5px #ea580c, 0 0 10px #dc2626' },
+                            '100%': { textShadow: '0 0 20px #ea580c, 0 0 30px #dc2626' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Tajawal', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+        .parallax-bg { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+        .nav-blur { backdrop-filter: blur(12px); background: rgba(0,0,0,0.85); transition: all 0.3s ease; }
+        .nav-transparent { background: transparent; backdrop-filter: blur(0px); }
+        .service-card { transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
+        .service-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 25px 40px -12px rgba(220,38,38,0.3); }
+        .project-card { transition: transform 0.5s ease; }
+        .project-card:hover { transform: scale(1.03); }
+        .project-card:hover .project-overlay { opacity: 1; }
+        .project-overlay { transition: opacity 0.3s ease; }
+        .counter-number { transition: all 0.2s; }
+        .testimonial-slide { transition: transform 0.5s ease, opacity 0.5s; }
+        .bg-fire-gradient { background: linear-gradient(135deg, #991b1b 0%, #dc2626 50%, #ea580c 100%); }
+        .bg-dark-gradient { background: linear-gradient(135deg, #111827 0%, #1f2937 100%); }
+        .hero-slide { transition: opacity 1.2s ease-in-out; }
+        .lazy-bg { background-size: cover; }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- ========== NAVBAR (Sticky + Transparent on scroll) ========== -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 nav-transparent py-4">
+        <div class="container mx-auto px-5 md:px-8 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 z-20">
+                <div class="w-10 h-10 bg-fire-red rounded-lg flex items-center justify-center shadow-lg animate-pulse-slow">
+                    <i class="fas fa-fire-extinguisher text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight"><span class="text-fire-red">صقر</span><span class="text-white"> الرياض</span></span>
+            </div>
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-white font-medium">
+                <a href="#home" class="hover:text-fire-orange transition-colors duration-200">الرئيسية</a>
+                <a href="#about" class="hover:text-fire-orange transition-colors duration-200">من نحن</a>
+                <a href="#services" class="hover:text-fire-orange transition-colors duration-200">خدماتنا</a>
+                <a href="#projects" class="hover:text-fire-orange transition-colors duration-200">مشاريعنا</a>
+                <a href="#contact" class="hover:text-fire-orange transition-colors duration-200">اتصل بنا</a>
+            </div>
+            <!-- Call Button + Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="tel:+966501234567" class="bg-fire-red hover:bg-fire-darkred text-white px-5 py-2 rounded-full font-bold transition-all shadow-lg flex items-center gap-2"><i class="fas fa-phone-alt"></i> <span class="hidden sm:inline">اتصل الآن</span></a>
+                <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="fixed inset-0 bg-black/95 backdrop-blur-lg z-40 transform -translate-x-full transition-transform duration-300 md:hidden flex flex-col pt-24 px-8 gap-6 text-white text-xl">
+            <a href="#home" class="border-b border-gray-700 pb-3 hover:text-fire-orange transition">الرئيسية</a>
+            <a href="#about" class="border-b border-gray-700 pb-3 hover:text-fire-orange transition">من نحن</a>
+            <a href="#services" class="border-b border-gray-700 pb-3 hover:text-fire-orange transition">خدماتنا</a>
+            <a href="#projects" class="border-b border-gray-700 pb-3 hover:text-fire-orange transition">مشاريعنا</a>
+            <a href="#contact" class="border-b border-gray-700 pb-3 hover:text-fire-orange transition">اتصل بنا</a>
+            <a href="https://wa.me/966501234567" class="bg-green-600 text-center py-3 rounded-full mt-4"><i class="fab fa-whatsapp ml-2"></i> واتساب</a>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION (Slider Auto + Parallax Overlay) ========== -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 w-full h-full">
+            <div id="heroSlider" class="relative w-full h-full">
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://images.unsplash.com/photo-1582139329536-e7284fece509?w=1600');"></div>
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://images.unsplash.com/photo-1584982751601-97dcc996659b?w=1600');"></div>
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://images.unsplash.com/photo-1562240021-31f4b1c2d125?w=1600');"></div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/70"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-5 md:px-8 text-right">
+            <div class="max-w-3xl mr-auto animate-fade-up">
+                <span class="inline-block bg-fire-red/20 backdrop-blur-sm text-fire-orange px-4 py-1 rounded-full text-sm font-bold mb-4 border-r-4 border-fire-red">🔥 حماية لا تُقهر | 20+ سنة خبرة</span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-5"><span class="text-fire-red">صقر الرياض</span><br>لحماية الأرواح والممتلكات</h1>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">أحدث أنظمة مكافحة الحرائق والسلامة وفق أعلى المعايير العالمية. نحمي منشآتك بأفضل التقنيات وفرق متخصصة في الرياض وجميع مناطق المملكة.</p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="tel:+966501234567" class="bg-fire-red hover:bg-fire-darkred px-8 py-3 rounded-full font-bold text-lg transition-all shadow-xl flex items-center gap-2"><i class="fas fa-phone-alt"></i> اتصل فوراً</a>
+                    <a href="https://wa.me/966501234567" target="_blank" class="border-2 border-white hover:bg-white hover:text-black px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2"><i class="fab fa-whatsapp text-green-500"></i> واتساب</a>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"><i class="fas fa-chevron-down text-white text-2xl"></i></div>
+    </section>
+
+    <!-- ========== ABOUT US (Split + Icons + Animations) ========== -->
+    <section id="about" class="py-24 bg-dark-gradient">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 space-y-6 animate-fade-up" style="animation-delay: 0.2s;">
+                    <span class="text-fire-orange font-bold tracking-wider">من نحن</span>
+                    <h2 class="text-3xl md:text-4xl font-bold">خبراء السلامة والحماية من الحرائق في الرياض</h2>
+                    <p class="text-gray-300 leading-relaxed">شركة صقر الرياض رائدة في مجال أنظمة مكافحة الحرائق منذ أكثر من عقدين. نقدم حلولاً متكاملة تشمل التصميم والتركيب والصيانة لأنظمة الإنذار، الإطفاء، الرشاشات، ومواد الإطفاء الحديثة. فريقنا معتمد دولياً ويضمن أقصى درجات الأمان لمنشآتك.</p>
+                    <div class="grid grid-cols-2 gap-5 pt-4">
+                        <div class="flex items-center gap-3"><i class="fas fa-certificate text-fire-orange text-2xl"></i><span>شهادات معتمدة</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-trophy text-fire-orange text-2xl"></i><span>خبرة 20+ عام</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-hard-hat text-fire-orange text-2xl"></i><span>فريق متخصص</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-clock text-fire-orange text-2xl"></i><span>دعم على مدار الساعة</span></div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 relative animate-float">
+                    <img src="https://images.unsplash.com/photo-1581092335871-4d7e9fca3944?w=600" alt="فريق مكافحة الحرائق" class="rounded-2xl shadow-2xl border border-fire-red/30 w-full object-cover lazy" loading="lazy">
+                    <div class="absolute -bottom-5 -left-5 bg-fire-red p-4 rounded-2xl shadow-xl"><i class="fas fa-fire-extinguisher text-4xl"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES CAROUSEL (Slider) ========== -->
+    <section id="services" class="py-24 bg-black">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-12">
+                <span class="text-fire-orange font-bold">خدماتنا المتطورة</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-2">حلول شاملة لمكافحة الحرائق</h2>
+                <div class="w-24 h-1 bg-fire-red mx-auto mt-4"></div>
+            </div>
+            <div class="relative overflow-hidden">
+                <div id="servicesCarousel" class="flex transition-transform duration-500 ease-out gap-6">
+                    <!-- Service 1 -->
+                    <div class="min-w-[280px] md:min-w-[350px] lg:min-w-[380px] bg-gray-900 rounded-2xl overflow-hidden shadow-xl service-card">
+                        <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?w=500" alt="أنظمة إنذار" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6"><h3 class="text-2xl font-bold text-fire-red">أنظمة الإنذار المبكر</h3><p class="text-gray-400 my-3">أجهزة استشعار دقيقة وكواشف دخان وحرارة ذكية للإنذار الفوري.</p><div class="flex gap-3 mt-4"><a href="tel:+966501234567" class="bg-fire-red px-4 py-2 rounded-lg text-sm">اتصل</a><a href="https://wa.me/966501234567" class="bg-gray-800 px-4 py-2 rounded-lg text-sm"><i class="fab fa-whatsapp text-green-500"></i> واتساب</a></div></div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="min-w-[280px] md:min-w-[350px] lg:min-w-[380px] bg-gray-900 rounded-2xl overflow-hidden shadow-xl service-card">
+                        <img src="https://images.unsplash.com/photo-1606768666853-403c90a981ad?w=500" alt="شبكات رشاشات" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6"><h3 class="text-2xl font-bold text-fire-red">شبكات الرشاشات الأوتوماتيكية</h3><p class="text-gray-400 my-3">تصميم وتركيب شبكات sprinkler وفق معايير NFPA لحماية فعالة.</p><div class="flex gap-3 mt-4"><a href="tel:+966501234567" class="bg-fire-red px-4 py-2 rounded-lg">اتصل</a><a href="https://wa.me/966501234567" class="bg-gray-800 px-4 py-2 rounded-lg"><i class="fab fa-whatsapp"></i> واتساب</a></div></div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="min-w-[280px] md:min-w-[350px] lg:min-w-[380px] bg-gray-900 rounded-2xl overflow-hidden shadow-xl service-card">
+                        <img src="https://images.unsplash.com/photo-1562240021-31f4b1c2d125?w=500" alt="طفايات حريق" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6"><h3 class="text-2xl font-bold text-fire-red">طفايات ومواد إطفاء</h3><p class="text-gray-400 my-3">توريد جميع أنواع الطفايات ومواد الإطفاء الكيميائية والغازية.</p><div class="flex gap-3 mt-4"><a href="tel:+966501234567" class="bg-fire-red px-4 py-2 rounded-lg">اتصل</a><a href="https://wa.me/966501234567" class="bg-gray-800 px-4 py-2 rounded-lg"><i class="fab fa-whatsapp"></i> واتساب</a></div></div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="min-w-[280px] md:min-w-[350px] lg:min-w-[380px] bg-gray-900 rounded-2xl overflow-hidden shadow-xl service-card">
+                        <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=500" alt="صيانة دورية" class="w-full h-48 object-cover" loading="lazy">
+                        <div class="p-6"><h3 class="text-2xl font-bold text-fire-red">صيانة وفحص دوري</h3><p class="text-gray-400 my-3">خدمات الصيانة الدورية واختبار الأنظمة لضمان الجاهزية الدائمة.</p><div class="flex gap-3 mt-4"><a href="tel:+966501234567" class="bg-fire-red px-4 py-2 rounded-lg">اتصل</a><a href="https://wa.me/966501234567" class="bg-gray-800 px-4 py-2 rounded-lg"><i class="fab fa-whatsapp"></i> واتساب</a></div></div>
+                    </div>
+                </div>
+                <button id="prevService" class="absolute left-0 top-1/2 -translate-y-1/2 bg-fire-red/80 p-3 rounded-full hover:bg-fire-red transition"><i class="fas fa-chevron-right"></i></button>
+                <button id="nextService" class="absolute right-0 top-1/2 -translate-y-1/2 bg-fire-red/80 p-3 rounded-full hover:bg-fire-red transition"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US (Counters + Animation) ========== -->
+    <section class="py-24 bg-dark-gradient">
+        <div class="container mx-auto px-5 md:px-8 text-center">
+            <h2 class="text-4xl font-bold">لماذا تختار صقر الرياض؟</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-12">
+                <div class="p-6 border border-fire-red/30 rounded-2xl hover:bg-fire-red/10 transition"><i class="fas fa-user-shield text-5xl text-fire-red mb-4"></i><h3 class="text-3xl font-bold counter" data-target="1250">0</h3><p>عميل موثوق</p></div>
+                <div class="p-6 border border-fire-red/30 rounded-2xl hover:bg-fire-red/10 transition"><i class="fas fa-building text-5xl text-fire-red mb-4"></i><h3 class="text-3xl font-bold counter" data-target="870">0</h3><p>مشروع منجز</p></div>
+                <div class="p-6 border border-fire-red/30 rounded-2xl hover:bg-fire-red/10 transition"><i class="fas fa-tools text-5xl text-fire-red mb-4"></i><h3 class="text-3xl font-bold counter" data-target="24">0</h3><p>دعم فني 24/7</p></div>
+                <div class="p-6 border border-fire-red/30 rounded-2xl hover:bg-fire-red/10 transition"><i class="fas fa-globe text-5xl text-fire-red mb-4"></i><h3 class="text-3xl font-bold counter" data-target="15">0</h3><p>سنوات خبرة متميزة</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS PORTFOLIO (Grid + Hover) ========== -->
+    <section id="projects" class="py-24 bg-black">
+        <div class="container mx-auto px-5 md:px-8">
+            <div class="text-center mb-12"><h2 class="text-4xl font-bold">أحدث مشاريعنا</h2><div class="w-24 h-1 bg-fire-red mx-auto mt-4"></div></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="project-card relative rounded-2xl overflow-hidden group h-64"><img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=600" class="w-full h-full object-cover" loading="lazy"><div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 flex items-end p-5"><div><p class="font-bold">برج المملكة - أنظمة إطفاء</p></div></div></div>
+                <div class="project-card relative rounded-2xl overflow-hidden group h-64"><img src="https://images.unsplash.com/photo-1584982751601-97dcc996659b?w=600" class="w-full h-full object-cover" loading="lazy"><div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 flex items-end p-5"><div><p class="font-bold">مدينة الملك عبدالله الاقتصادية</p></div></div></div>
+                <div class="project-card relative rounded-2xl overflow-hidden group h-64"><img src="https://images.unsplash.com/photo-1562240021-31f4b1c2d125?w=600" class="w-full h-full object-cover" loading="lazy"><div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 flex items-end p-5"><div><p class="font-bold">مطار الملك خالد الدولي</p></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SLIDER ========== -->
+    <section class="py-24 bg-dark-gradient">
+        <div class="container mx-auto px-5 md:px-8 text-center">
+            <h2 class="text-4xl font-bold">آراء عملائنا</h2>
+            <div class="relative max-w-3xl mx-auto mt-12 overflow-hidden">
+                <div id="testimonialSlider" class="flex transition-transform duration-500">
+                    <div class="min-w-full p-6 bg-gray-800 rounded-2xl shadow-2xl"><i class="fas fa-quote-right text-4xl text-fire-red mb-4"></i><p class="text-lg">فريق محترف وسريع جداً. أنظمة السلامة التي ركبوها في منشأتنا تعمل بكفاءة عالية. نشكر صقر الرياض.</p><h4 class="font-bold mt-4">- خالد العنزي</h4></div>
+                    <div class="min-w-full p-6 bg-gray-800 rounded-2xl shadow-2xl"><i class="fas fa-quote-right text-4xl text-fire-red mb-4"></i><p class="text-lg">أفضل شركة لمكافحة الحرائق في الرياض، التزام بالمواعيد ودعم فني ممتاز.</p><h4 class="font-bold mt-4">- م. فيصل القحطاني</h4></div>
+                    <div class="min-w-full p-6 bg-gray-800 rounded-2xl shadow-2xl"><i class="fas fa-quote-right text-4xl text-fire-red mb-4"></i><p class="text-lg">استجابة سريعة جداً للطوارئ وأنظمة حديثة، أوصي بهم بشدة.</p><h4 class="font-bold mt-4">- أحمد الرشيد</h4></div>
+                </div>
+                <button id="prevTest" class="absolute left-0 top-1/2 -translate-y-1/2 bg-fire-red p-2 rounded-full"><i class="fas fa-chevron-right"></i></button>
+                <button id="nextTest" class="absolute right-0 top-1/2 -translate-y-1/2 bg-fire-red p-2 rounded-full"><i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="py-24 bg-black">
+        <div class="container mx-auto px-5 md:px-8 grid md:grid-cols-2 gap-12">
+            <div><h2 class="text-4xl font-bold">تواصل مع فريق الطوارئ</h2><p class="text-gray-400 mt-4">فريقنا جاهز على مدار الساعة لتلبية احتياجات السلامة الخاصة بك.</p><div class="mt-8 space-y-4"><a href="tel:+966501234567" class="flex items-center gap-3 text-xl"><i class="fas fa-phone-alt text-fire-red"></i> +966 50 123 4567</a><a href="https://wa.me/966501234567" class="flex items-center gap-3 text-xl"><i class="fab fa-whatsapp text-green-500"></i> واتساب : +966 50 123 4567</a><div class="flex gap-4 mt-6"><i class="fab fa-twitter text-2xl hover:text-fire-red"></i><i class="fab fa-instagram text-2xl hover:text-fire-red"></i><i class="fab fa-linkedin text-2xl hover:text-fire-red"></i></div></div></div>
+            <form class="space-y-5 bg-gray-900 p-8 rounded-2xl"><input type="text" placeholder="الاسم الكامل" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700 focus:border-fire-red outline-none"><input type="tel" placeholder="رقم الجوال" class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700"><textarea rows="4" placeholder="نوع الخدمة المطلوبة ..." class="w-full p-3 bg-gray-800 rounded-lg border border-gray-700"></textarea><button type="submit" class="bg-fire-red w-full py-3 rounded-lg font-bold text-lg hover:bg-fire-darkred transition">إرسال الطلب</button></form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-gray-950 py-12 border-t border-fire-red/30"><div class="container mx-auto px-5 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-8"><div><div class="flex items-center gap-2"><i class="fas fa-fire-extinguisher text-fire-red text-2xl"></i><span class="font-bold text-xl">صقر الرياض</span></div><p class="text-gray-500 mt-3">حماية متكاملة بمهنية عالية.</p></div><div><h4 class="font-bold text-white mb-3">روابط سريعة</h4><ul class="space-y-2 text-gray-400"><li><a href="#home" class="hover:text-fire-red">الرئيسية</a></li><li><a href="#services" class="hover:text-fire-red">خدماتنا</a></li><li><a href="#projects" class="hover:text-fire-red">المشاريع</a></li></ul></div><div><h4 class="font-bold text-white mb-3">الخدمات</h4><ul class="space-y-2 text-gray-400"><li>أنظمة الإنذار</li><li>شبكات الرشاشات</li><li>طفايات ومواد إطفاء</li><li>الصيانة الدورية</li></ul></div><div><h4 class="font-bold text-white mb-3">تابعنا</h4><div class="flex gap-4 text-2xl"><i class="fab fa-facebook hover:text-fire-red cursor-pointer"></i><i class="fab fa-instagram hover:text-fire-red cursor-pointer"></i><i class="fab fa-x-twitter hover:text-fire-red cursor-pointer"></i></div></div></div><div class="text-center text-gray-600 text-sm pt-8 border-t border-gray-800 mt-8">© 2025 صقر الرياض | جميع الحقوق محفوظة - تصميم متخصص في أنظمة مكافحة الحرائق</div></footer>
+
+    <script>
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => { if(window.scrollY > 50) navbar.classList.add('nav-blur', 'shadow-2xl'), navbar.classList.remove('nav-transparent'); else navbar.classList.add('nav-transparent'), navbar.classList.remove('nav-blur'); });
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn'), mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('-translate-x-full'); });
+        document.querySelectorAll('#mobileMenu a').forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('-translate-x-full')));
+        // Hero Slider
+        let slides = document.querySelectorAll('.hero-slide'), current = 0;
+        function showSlide(index) { slides.forEach((s,i)=> s.style.opacity = i===index ? '1' : '0'); }
+        setInterval(() => { current = (current+1)%slides.length; showSlide(current); }, 4500);
+        showSlide(0);
+        // Services Carousel
+        const carousel = document.getElementById('servicesCarousel'), prevS = document.getElementById('prevService'), nextS = document.getElementById('nextService');
+        let scrollPos = 0, cardWidth = 380;
+        prevS.addEventListener('click', () => { scrollPos = Math.min(scrollPos + cardWidth, 0); carousel.style.transform = `translateX(${scrollPos}px)`; });
+        nextS.addEventListener('click', () => { let maxScroll = -(carousel.scrollWidth - carousel.parentElement.clientWidth); scrollPos = Math.max(scrollPos - cardWidth, maxScroll); carousel.style.transform = `translateX(${scrollPos}px)`; });
+        // Testimonials Slider
+        const testSlider = document.getElementById('testimonialSlider'), prevT = document.getElementById('prevTest'), nextT = document.getElementById('nextTest');
+        let testIndex = 0, totalTests = 3;
+        function updateTestSlide() { testSlider.style.transform = `translateX(-${testIndex * 100}%)`; }
+        prevT.addEventListener('click', () => { testIndex = (testIndex - 1 + totalTests) % totalTests; updateTestSlide(); });
+        nextT.addEventListener('click', () => { testIndex = (testIndex + 1) % totalTests; updateTestSlide(); });
+        // Counters Animation (Intersection Observer)
+        const counters = document.querySelectorAll('.counter');
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if(entry.isIntersecting) { const el = entry.target, target = parseInt(el.getAttribute('data-target')); let count = 0, increment = target/50; const updateCounter = setInterval(() => { count += increment; if(count >= target) { el.innerText = target; clearInterval(updateCounter); } else el.innerText = Math.floor(count); }, 25); observer.unobserve(el); } }); }, { threshold: 0.5 });
+        counters.forEach(c => observer.observe(c));
+        // Lazy Load images already using loading="lazy"
+    </script>
+</body>
+</html>
