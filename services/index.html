@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="شركة سيفتي ايكون  لمكافحة الحرائق في الرياض - خدمات متكاملة لأنظمة الإطفاء والحماية من الحرائق. معتمدون ومرخصون من الدفاع المدني السعودي." />
+  <meta name="keywords" content="مكافحة حرائق الرياض, أنظمة إطفاء, حماية من الحرائق, الدفاع المدني, fire fighting Riyadh" />
+  <meta name="author" content="سيفتي ايكون  لمكافحة الحرائق" />
+  <meta property="og:title" content="سيفتي ايكون  | مكافحة الحرائق - الرياض" />
+  <meta property="og:description" content="خدمات متكاملة لأنظمة الإطفاء والحماية من الحرائق في الرياض" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#c0392b" />
+  <title>سيفتي ايكون  | مكافحة الحرائق - الرياض</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            fire: {
+              50: '#fff3f0',
+              100: '#ffe1db',
+              200: '#ffc2b8',
+              300: '#ff9485',
+              400: '#ff5a45',
+              500: '#f83838',
+              600: '#e51b1b',
+              700: '#c0392b',
+              800: '#9b2226',
+              900: '#7f1d1d',
+            },
+            ember: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            },
+            coal: {
+              800: '#1c1917',
+              900: '#0c0a09',
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            oswald: ['Oswald', 'sans-serif'],
+          },
+          animation: {
+            'flame': 'flame 2s ease-in-out infinite alternate',
+            'float': 'float 6s ease-in-out infinite',
+            'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+            'slide-up': 'slideUp 0.7s ease forwards',
+            'fade-in': 'fadeIn 1s ease forwards',
+            'counter': 'counterAnim 2s ease forwards',
+          },
+          keyframes: {
+            flame: {
+              '0%': { transform: 'scaleY(1) scaleX(1)', filter: 'brightness(1)' },
+              '100%': { transform: 'scaleY(1.1) scaleX(0.95)', filter: 'brightness(1.2)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { boxShadow: '0 0 20px rgba(239,68,68,0.5)' },
+              '50%': { boxShadow: '0 0 50px rgba(239,68,68,0.9), 0 0 80px rgba(251,146,60,0.4)' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(60px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "سيفتي ايكون  لمكافحة الحرائق",
+    "description": "خدمات متكاملة لأنظمة الإطفاء والحماية من الحرائق في الرياض",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "الرياض",
+      "addressCountry": "SA"
+    },
+    "telephone": "+966500000000",
+    "url": "https://dara-fire.sa"
+  }
+  </script>
+  <style>
+    /* Custom styles for white sections */
+    .white-section {
+      background-color: #ffffff !important;
+    }
+    .white-section h2, .white-section h3, .white-section .text-white {
+      color: #1a1a1a !important;
+    }
+    .white-section p:not(.text-fire-400):not(.text-ember-400) {
+      color: #4a4a4a !important;
+    }
+    .white-section .bg-coal-800, .white-section .bg-coal-900 {
+      background-color: #f8f8f8 !important;
+    }
+    .white-section .border-white\/5 {
+      border-color: #e0e0e0 !important;
+    }
+    .white-section .text-white\/60, .white-section .text-white\/70 {
+      color: #666666 !important;
+    }
+    .white-section .text-white\/50 {
+      color: #888888 !important;
+    }
+    .white-section .bg-coal-900\/60 {
+      background-color: #f0f0f0 !important;
+    }
+    .white-section .bg-white\/5, .white-section .bg-white\/10 {
+      background-color: #f0f0f0 !important;
+    }
+    .white-section .bg-black {
+      background-color: #2d2d2d !important;
+    }
+    .white-section .text-white\/30 {
+      color: #aaaaaa !important;
+    }
+    .white-section .bg-coal-900\/98 {
+      background-color: #ffffff !important;
+    }
+    /* Navbar adjustments for white sections */
+    .navbar-white-bg {
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+    .navbar-white-bg .text-white\/80 {
+      color: #333333 !important;
+    }
+    .navbar-white-bg .menu-bar {
+      background-color: #333333 !important;
+    }
+    /* Footer adjustments */
+    .white-section footer .text-white {
+      color: #ffffff !important;
+    }
+    .white-section footer .text-white\/50, .white-section footer .text-white\/30 {
+      color: rgba(255,255,255,0.5) !important;
+    }
+    /* Service card adjustments */
+    .white-section .bg-coal-800 {
+      background-color: #f5f5f5 !important;
+      border: 1px solid #e5e5e5 !important;
+    }
+    .white-section .text-white {
+      color: #1a1a1a !important;
+    }
+    /* Form adjustments */
+    .white-section .bg-coal-900 {
+      background-color: #fafafa !important;
+    }
+    .white-section input, .white-section select, .white-section textarea {
+      background-color: #ffffff !important;
+      border-color: #e0e0e0 !important;
+      color: #333333 !important;
+    }
+    .white-section input::placeholder, .white-section textarea::placeholder {
+      color: #aaaaaa !important;
+    }
+    .white-section label {
+      color: #555555 !important;
+    }
+    /* Counter adjustments */
+    .white-section .counter {
+      color: #c0392b !important;
+    }
+  </style>
+</head>
+<body class="font-cairo overflow-x-hidden">
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/966500000000" target="_blank" id="whatsapp-float"
+    class="fixed bottom-8 left-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 group"
+    aria-label="تواصل عبر واتساب">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="text-sm font-bold hidden group-hover:inline-block whitespace-nowrap">واتساب الآن</span>
+  </a>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar" class="fixed top-0 right-0 left-0 z-40 transition-all duration-500 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <div class="w-16 h-16 bg-white  rounded-xl flex items-center justify-center shadow-lg animate-pulse-glow">
+              <img src="../safety-icon.png" alt="">
+            </div>
+            <div class="absolute -top-1 -left-1 w-3 h-3 bg-ember-400 rounded-full animate-ping"></div>
+          </div>
+          <div>
+            <div class="text-xl font-black text-[#043461] leading-tight tracking-wide">سيفتي ايكون </div>
+            <div class="text-xs text-fire-400 font-semibold tracking-widest">مكافحة الحرائق</div>
+          </div>
+        </div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="#home" class="nav-link text-white/80 hover:text-fire-400 text-sm font-semibold transition-colors duration-300 relative">الرئيسية</a>
+          <a href="#about" class="nav-link text-white/80 hover:text-fire-400 text-sm font-semibold transition-colors duration-300">من نحن</a>
+          <a href="#services" class="nav-link text-white/80 hover:text-fire-400 text-sm font-semibold transition-colors duration-300">خدماتنا</a>
+          <a href="#why-us" class="nav-link text-white/80 hover:text-fire-400 text-sm font-semibold transition-colors duration-300">لماذا نحن</a>
+          <a href="#projects" class="nav-link text-white/80 hover:text-fire-400 text-sm font-semibold transition-colors duration-300">مشاريعنا</a>
+          <a href="#contact" class="nav-link text-white/80 hover:text-fire-400 text-sm font-semibold transition-colors duration-300">تواصل معنا</a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="tel:+966500000000" class="flex items-center gap-2 bg-gradient-to-r from-fire-700 to-fire-600 hover:from-fire-600 hover:to-ember-500 text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-fire-700/50">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            اتصل الآن
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="القائمة">
+          <span class="menu-bar w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="menu-bar w-6 h-0.5 bg-white transition-all duration-300"></span>
+          <span class="menu-bar w-6 h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden mobile-menu-closed overflow-hidden transition-all duration-500">
+      <div class="bg-coal-900/98 backdrop-blur-xl border-t border-fire-700/30 mt-4 py-6 px-6 flex flex-col gap-4">
+        <a href="#home" class="text-white/80 hover:text-fire-400 font-semibold transition-colors py-2 border-b border-white/10">الرئيسية</a>
+        <a href="#about" class="text-white/80 hover:text-fire-400 font-semibold transition-colors py-2 border-white/10">من نحن</a>
+        <a href="#services" class="text-white/80 hover:text-fire-400 font-semibold transition-colors py-2 border-b border-white/10">خدماتنا</a>
+        <a href="#why-us" class="text-white/80 hover:text-fire-400 font-semibold transition-colors py-2 border-b border-white/10">لماذا نحن</a>
+        <a href="#projects" class="text-white/80 hover:text-fire-400 font-semibold transition-colors py-2 border-b border-white/10">مشاريعنا</a>
+        <a href="#contact" class="text-white/80 hover:text-fire-400 font-semibold transition-colors py-2 border-b border-white/10">تواصل معنا</a>
+        <a href="tel:+966500000000" class="flex items-center justify-center gap-2 bg-gradient-to-r from-fire-700 to-fire-600 text-white px-5 py-3 rounded-full font-bold mt-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          اتصل الآن
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION (stays dark) ==================== -->
+ <!-- Hero Section for Services Page - سفتي آيكون للأمن والسلامة -->
+<section class="relative min-h-[50vh] md:min-h-[60vh] flex items-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+  
+  <!-- Background Image with Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=1920&q=80" alt="خدمات الأمن والسلامة" class="w-full h-full object-cover opacity-30">
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+  </div>
+
+  <!-- Fire Accent Elements -->
+  <div class="absolute top-0 left-0 w-64 h-64 bg-fire-500/10 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 md:py-20">
+    <div class="max-w-3xl">
+      
+      <!-- Breadcrumb / مسار الصفحة -->
+      <div class="flex items-center gap-2 text-sm text-gray-300 mb-4">
+        <a href="#" class="hover:text-orange-500 transition-colors">
+          <i class="fas fa-home ml-1"></i>الرئيسية
+        </a>
+        <i class="fas fa-chevron-left text-xs text-gray-500"></i>
+        <span class="text-orange-500 font-medium">خدماتنا</span>
+      </div>
+
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold px-4 py-2 rounded-full mb-5 backdrop-blur-sm">
+        <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+        سفتي آيكون للأمن والسلامة
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-5">
+        <span class="block">خدماتنا</span>
+        <span class="block text-orange-500 text-3xl sm:text-4xl md:text-5xl mt-2">الحلول المتكاملة للأمن والسلامة</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="text-gray-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+        نقدم في <span class="text-orange-500 font-semibold">سفتي آيكون</span> منظومة متكاملة من خدمات وأنظمة السلامة ومكافحة الحرائق 
+        بأعلى المعايير العالمية، لحماية منشآتك وأرواح من تحب.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:966500000000" class="group flex items-center justify-center gap-2 bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 hover:scale-105 shadow-lg">
+          <i class="fas fa-phone-alt"></i>
+          اتصل بنا: 0500000000
+        </a>
+        <a href="https://wa.me/966500000000" target="_blank" class="group flex items-center justify-center gap-2 bg-white/10 hover:bg-green-600/20 border border-white/20 hover:border-green-500 text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 hover:scale-105 backdrop-blur-sm">
+          <i class="fab fa-whatsapp text-green-400"></i>
+          واتساب
+        </a>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="flex flex-wrap gap-6 mt-10 pt-6 border-t border-white/10">
+        <div class="text-center">
+          <div class="text-2xl font-black text-orange-500">+500</div>
+          <div class="text-gray-400 text-xs">مشروع منجز</div>
+        </div>
+        <div class="w-px h-10 bg-white/10"></div>
+        <div class="text-center">
+          <div class="text-2xl font-black text-orange-500">15+</div>
+          <div class="text-gray-400 text-xs">سنة خبرة</div>
+        </div>
+        <div class="w-px h-10 bg-white/10"></div>
+        <div class="text-center">
+          <div class="text-2xl font-black text-orange-500">24/7</div>
+          <div class="text-gray-400 text-xs">دعم طوارئ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Wave Decoration -->
+  <div class="absolute bottom-0 left-0 right-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full h-12 md:h-16 opacity-20">
+      <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Required Font Awesome and Styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+  * {
+    font-family: 'Cairo', sans-serif;
+  }
+</style>
+
+
+
+  <!-- ==================== SERVICES SECTION (WHITE BACKGROUND) ==================== -->
+   <!-- ==================== SERVICES SECTION ==================== -->
+<!-- Services Section - سفتي آيكون للأمن والسلامة -->
+<section id="services" class="py-24 relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
+  
+  <!-- Background Accent -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-20 left-10 w-72 h-72 bg-fire-600 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-10 h-0.5 bg-fire-600"></div>
+        <span class="text-fire-600 font-bold text-sm tracking-widest uppercase">خدماتنا</span>
+        <div class="w-10 h-0.5 bg-fire-600"></div>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-4">
+        منظومة <span class="text-fire-600">متكاملة</span> من خدمات الأمن والسلامة
+      </h2>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+        نقدم حلولاً شاملة لجميع احتياجاتك في مجال الحماية من الحرائق والسلامة العامة
+      </p>
+    </div>
+
+    <!-- Services Grid - 3 columns on desktop, 2 on tablet, 1 on mobile -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Service 1: أنظمة الإنذار المبكر -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1558618047-f4e20e66fc8b?w=600&q=80" alt="أنظمة الإنذار المبكر" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">أنظمة الإنذار المبكر عن الحريق</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة أنظمة الإنذار المبكر عن الحريق (كشف الدخان والحرارة) مع لوحات تحكم متطورة من أفضل الماركات العالمية.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">كشف دخان</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">كشف حرارة</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">لوحات تحكم</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2: أنظمة إطفاء الحريق -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="أنظمة إطفاء الحريق" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">أنظمة إطفاء الحريق</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة وتعبئة أنظمة إطفاء الحريق (طفايات - رشاشات - شبكات) وفق المعايير المعتمدة من الدفاع المدني.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">طفايات</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">رشاشات</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">شبكات مياه</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: نظام إطفاء المطابخ -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?w=600&q=80" alt="إطفاء المطابخ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6.5M17 13l1.5 6.5M9 21h6M12 13v8"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">نظام إطفاء المطابخ</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة نظام إطفاء المطابخ التجارية والمطاعم (أنظمة الرذاذ المائي والمواد الكيميائية الرطبة).
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مطابخ تجارية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مطاعم</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مواد كيميائية رطبة</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4: نظام إطفاء CO2 -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=80" alt="إطفاء CO2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">نظام إطفاء CO2</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة نظام إطفاء ثاني أكسيد الكربون للأماكن الحساسة (غرف الكهرباء - المحولات - مراكز البيانات).
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">غرف كهرباء</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">محولات</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مراكز بيانات</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5: نظام إطفاء FM 200 -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=80" alt="إطفاء FM200" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">نظام إطفاء FM 200</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة نظام إطفاء FM200 المتطور لغرف الخوادم ومراكز البيانات والمعدات الحساسة.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">غرف خوادم</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مراكز بيانات</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">معدات حساسة</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6: مضخات الحريق -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80" alt="مضخات الحريق" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">مضخات الحريق</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة مضخات الحريق (مضخات رئيسية - مساعدة - ضغط) وفق المواصفات السعودية والدولية.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مضخات رئيسية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مضخات مساعدة</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مضخات ضغط</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 7: أنظمة الإطفاء بالفوم -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&q=80" alt="إطفاء بالفوم" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">أنظمة الإطفاء بالفوم</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة أنظمة الإطفاء بالفوم للمستودعات ومصافي البترول والمنشآت الصناعية.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مستودعات</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">منشآت صناعية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مصافي بترول</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 8: سلالم الطوارئ -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="سلالم الطوارئ" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l4 4-4 4M7 5l4 4-4 4"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">سلالم الطوارئ</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب سلالم طوارئ خارجية وداخلية حسب اشتراطات الدفاع المدني لضمان مخارج آمنة.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">سلالم خارجية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">سلالم داخلية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">مخارج طوارئ</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 9: عقود صيانة سنوية -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="عقود صيانة" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">عقود صيانة سنوية</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            برامج صيانة شاملة لأنظمة السلامة مع زيارات دورية وتقارير فنية وضمان جاهزية الأنظمة على مدار العام.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">زيارات دورية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">تقارير فنية</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">ضمان جاهزية</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 10: لوحات الإنذار وبرمجتها -->
+      <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 hover:border-fire-600/30">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1558618047-f4e20e66fc8b?w=600&q=80" alt="لوحات الإنذار" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+          <div class="absolute top-4 right-4 w-12 h-12 bg-fire-600 rounded-xl flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm3 8h2v2H8v-2zm0 4h2v2H8v-2zm6-8h2v2h-2V7zm0 4h2v2h-2v-2z"/></svg>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-black text-gray-900 mb-3">لوحات الإنذار وبرمجتها</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">
+            توريد وتركيب وصيانة وبرمجة لوحات الإنذار المتطورة من أفضل الماركات العالمية.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">برمجة متقدمة</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">أفضل الماركات</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full">تكامل أنظمة</span>
+          </div>
+          <div class="flex gap-2 mt-4">
+            <a href="tel:+966500000000" class="flex-1 flex items-center justify-center gap-2 bg-fire-600 hover:bg-fire-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              اتصل
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="flex-1 flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl text-sm font-bold transition-all duration-300">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center mt-12">
+      <a href="tel:+966500000000" class="inline-flex items-center gap-3 bg-fire-600 hover:bg-fire-700 text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105 shadow-lg">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        احصل على استشارة مجانية الآن
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Required Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+  * {
+    font-family: 'Cairo', sans-serif;
+  }
+</style>
+
+ 
+
+
+
+
+  
+
+  <!-- ==================== FOOTER ==================== -->
+   <footer class="bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
+    <!-- Animated Fire Border Top -->
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-fire-500 to-transparent animate-pulse"></div>
+    
+    <!-- Floating Particles Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
+      <div class="absolute top-20 left-[10%] w-2 h-2 bg-fire-500 rounded-full animate-ping"></div>
+      <div class="absolute bottom-32 right-[15%] w-3 h-3 bg-ember-500 rounded-full animate-ping" ></div>
+      <div class="absolute top-1/2 left-[5%] w-1.5 h-1.5 bg-fire-400 rounded-full animate-pulse"></div>
+      <div class="absolute bottom-20 left-[20%] w-2 h-2 bg-amber-500 rounded-full animate-ping" ></div>
+      <div class="absolute top-40 right-[8%] w-2.5 h-2.5 bg-fire-600 rounded-full animate-pulse" ></div>
+    </div>
+
+    <!-- Main Footer -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        
+        <!-- Company Info -->
+        <div class="col-span-1 sm:col-span-2 lg:col-span-1 group">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-16 h-16 bg-white  rounded-2xl flex items-center justify-center shadow-lg shadow-fire-900/50 group-hover:scale-110 transition-transform duration-300">
+            <img src="../safety-icon.png" alt="">
+            </div>
+            <div>
+              <div class="text-2xl font-black text-white tracking-tight">سيفتي ايكون</div>
+              <div class="text-xs text-fire-400 font-semibold tracking-wider">مكافحة الحرائق - الرياض</div>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed text-sm mb-6">
+            شركة رائدة في مجال مكافحة الحرائق وأنظمة الإطفاء في الرياض والمملكة العربية السعودية. خبرة تزيد عن <span class="text-fire-400 font-bold">15 عاماً</span> في حماية الأرواح والممتلكات.
+          </p>
+          
+          <!-- Social Media with Hover Effects -->
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-fire-600 border border-white/10 hover:border-fire-500 rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-fire-600 border border-white/10 hover:border-fire-500 rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-white/5 hover:bg-fire-600 border border-white/10 hover:border-fire-500 rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+            </a>
+            <a href="https://wa.me/966500000000" target="_blank" class="w-10 h-10 bg-white/5 hover:bg-green-600 border border-white/10 hover:border-green-500 rounded-xl flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+          
+          <!-- Trust Badge -->
+          <div class="mt-6 flex items-center gap-2 bg-white/5 rounded-xl p-3 border border-white/10">
+            <svg class="w-8 h-8 text-fire-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div>
+              <div class="text-white text-xs font-bold">معتمد من الدفاع المدني</div>
+              <div class="text-gray-500 text-xs">شهادة رقم: 123456789</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links with Icons -->
+        <div>
+          <h4 class="text-white font-black text-lg mb-6 flex items-center gap-2">
+            <svg class="w-5 h-5 text-fire-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
+            روابط سريعة
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="#home" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-fire-500 rounded-full group-hover:scale-150 transition-transform"></span>الرئيسية</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-fire-500 rounded-full group-hover:scale-150 transition-transform"></span>من نحن</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-fire-500 rounded-full group-hover:scale-150 transition-transform"></span>خدماتنا</a></li>
+            <li><a href="#why-us" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-fire-500 rounded-full group-hover:scale-150 transition-transform"></span>لماذا نحن</a></li>
+            <li><a href="#projects" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-fire-500 rounded-full group-hover:scale-150 transition-transform"></span>مشاريعنا</a></li>
+            <li><a href="#contact" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-fire-500 rounded-full group-hover:scale-150 transition-transform"></span>تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- Services with Icons -->
+        <div>
+          <h4 class="text-white font-black text-lg mb-6 flex items-center gap-2">
+            <svg class="w-5 h-5 text-fire-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            خدماتنا
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform"></span>أنظمة الإنذار المبكر</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform"></span>أنظمة إطفاء الحريق</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform"></span>إطفاء المطابخ</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform"></span>إطفاء FM200 و CO2</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform"></span>مضخات الحريق</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-fire-400 text-sm transition-all duration-300 flex items-center gap-2 group"><span class="w-1.5 h-1.5 bg-amber-500 rounded-full group-hover:scale-150 transition-transform"></span>عقود الصيانة السنوية</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info with Enhanced Icons -->
+        <div>
+          <h4 class="text-white font-black text-lg mb-6 flex items-center gap-2">
+            <svg class="w-5 h-5 text-fire-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            تواصل معنا
+          </h4>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-fire-600/20 rounded-xl flex items-center justify-center group-hover:bg-fire-600/40 transition-all duration-300">
+                <svg class="w-5 h-5 text-fire-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+              </div>
+              <div>
+                <div class="text-gray-400 text-xs">العنوان</div>
+                <span class="text-white/70 text-sm">الرياض - طريق الملك عبدالله، حي العليا</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-fire-600/20 rounded-xl flex items-center justify-center group-hover:bg-fire-600/40 transition-all duration-300">
+                <svg class="w-5 h-5 text-fire-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <div class="text-gray-400 text-xs">رقم الهاتف</div>
+                <span class="text-white/70 text-sm">0500 000 000</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-fire-600/20 rounded-xl flex items-center justify-center group-hover:bg-fire-600/40 transition-all duration-300">
+                <svg class="w-5 h-5 text-fire-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <div class="text-gray-400 text-xs">البريد الإلكتروني</div>
+                <span class="text-white/70 text-sm">info@safeicon.sa</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 group">
+              <div class="w-10 h-10 bg-fire-600/20 rounded-xl flex items-center justify-center group-hover:bg-fire-600/40 transition-all duration-300">
+                <svg class="w-5 h-5 text-fire-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <div class="text-gray-400 text-xs">ساعات العمل</div>
+                <span class="text-white/70 text-sm">الأحد - الخميس: 8ص - 6م</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Emergency Button -->
+          <div class="mt-6">
+            <a href="tel:+966500000000" class="flex items-center justify-center gap-2 bg-gradient-to-r from-fire-600 to-fire-700 hover:from-fire-500 hover:to-fire-800 text-white px-4 py-3 rounded-xl font-bold text-sm transition-all duration-300 hover:scale-105 w-full">
+              <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              طوارئ 24 ساعة - اتصل الآن
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Separator with Fire Effect -->
+    <div class="relative my-6">
+      <div class="absolute left-1/2 transform -translate-x-1/2 w-32 h-0.5 bg-gradient-to-r from-transparent via-fire-500 to-transparent"></div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10 bg-black/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-gray-500 text-sm text-center flex items-center gap-2">
+            <svg class="w-4 h-4 text-fire-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            جميع الحقوق محفوظة © 2025 - سيفتي ايكون لمكافحة الحرائق
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              <span class="text-gray-500 text-xs">خدمة طوارئ متاحة 24/7</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-fire-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span class="text-gray-500 text-xs">معتمد من الدفاع المدني</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-fire-600 to-fire-700 rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-all duration-300 opacity-0 invisible z-50">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </button>
+  </footer>
+
+  <script>
+    // Scroll to Top Button Functionality
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+        scrollToTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        scrollToTopBtn.classList.add('opacity-0', 'invisible');
+        scrollToTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    });
+    
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+  <script>
+    // Basic functionality for navbar background change on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-white-bg');
+        navbar.classList.remove('py-4');
+        navbar.classList.add('py-2');
+      } else {
+        navbar.classList.remove('navbar-white-bg');
+        navbar.classList.remove('py-2');
+        navbar.classList.add('py-4');
+      }
+    });
+    
+    // Counter animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+    
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const count = parseInt(counter.innerText);
+        const increment = target / speed;
+        
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(animateCounters, 20);
+        } else {
+          counter.innerText = target;
+        }
+      });
+    };
+    
+    // Start counters when in viewport
+    const observerOptions = {
+      threshold: 0.5
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    const counterSection = document.querySelector('#why-us .grid');
+    if (counterSection) {
+      observer.observe(counterSection);
+    }
+    
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('mobile-menu-closed');
+        if (mobileMenu.classList.contains('mobile-menu-closed')) {
+          mobileMenu.style.maxHeight = '0';
+        } else {
+          mobileMenu.style.maxHeight = '400px';
+        }
+      });
+      mobileMenu.classList.add('mobile-menu-closed');
+      mobileMenu.style.maxHeight = '0';
+    }
+    
+    // Service slider
+    const track = document.getElementById('services-track');
+    const prevBtn = document.getElementById('services-prev');
+    const nextBtn = document.getElementById('services-next');
+    let currentIndex = 0;
+    const cardWidth = 400; // Approximate width
+    
+    if (track && prevBtn && nextBtn) {
+      const updateSlider = () => {
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      };
+      
+      prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSlider();
+        }
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        const maxIndex = track.children.length - 3;
+        if (currentIndex < maxIndex) {
+          currentIndex++;
+          updateSlider();
+        }
+      });
+    }
+    
+    // Testimonials slider
+    const testimonialTrack = document.getElementById('testimonials-track');
+    const testimonialPrev = document.getElementById('testimonials-prev');
+    const testimonialNext = document.getElementById('testimonials-next');
+    let testimonialIndex = 0;
+    const testimonialCardWidth = 400;
+    
+    if (testimonialTrack && testimonialPrev && testimonialNext) {
+      const updateTestimonialSlider = () => {
+        testimonialTrack.style.transform = `translateX(-${testimonialIndex * testimonialCardWidth}px)`;
+      };
+      
+      testimonialPrev.addEventListener('click', () => {
+        if (testimonialIndex > 0) {
+          testimonialIndex--;
+          updateTestimonialSlider();
+        }
+      });
+      
+      testimonialNext.addEventListener('click', () => {
+        const maxIndex = testimonialTrack.children.length - 2;
+        if (testimonialIndex < maxIndex) {
+          testimonialIndex++;
+          updateTestimonialSlider();
+        }
+      });
+    }
+    
+    // Form submission
+    const submitBtn = document.getElementById('submit-form');
+    const formSuccess = document.getElementById('form-success');
+    
+    if (submitBtn && formSuccess) {
+      submitBtn.addEventListener('click', () => {
+        formSuccess.classList.remove('hidden');
+        setTimeout(() => {
+          formSuccess.classList.add('hidden');
+        }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>
