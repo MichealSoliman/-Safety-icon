@@ -1260,6 +1260,7 @@
   </div>
 </section>
 
+
 <!-- CSS for animations -->
 <style>
   @keyframes fadeUp {
@@ -1435,6 +1436,132 @@
       </div>
     </div>
   </section>
+
+  <!-- ==================== GOOGLE MAPS SECTION (SAFETY ICON LOCATION) ==================== -->
+<section class="py-16 md:py-24 relative overflow-hidden" style="background-color: #f5f5f5 !important; direction: rtl;">
+  <!-- decorative elements -->
+  <div class="absolute inset-0 opacity-30 pointer-events-none">
+    <div class="absolute top-20 left-10 w-72 h-72 bg-fire-500/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-20 right-10 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+    <!-- header with fade-up animation -->
+    <div class="text-center mb-12 animate-on-scroll fade-up">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="w-12 h-0.5 bg-gradient-to-l from-fire-600 to-transparent"></div>
+        <span class="text-fire-600 font-bold text-sm tracking-widest uppercase">موقعنا</span>
+        <div class="w-12 h-0.5 bg-gradient-to-r from-fire-600 to-transparent"></div>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black text-gray-900 mb-4">
+        أين تجد <span class="text-transparent bg-clip-text bg-gradient-to-r from-fire-600 to-amber-500">سيفتي ايكون؟</span>
+      </h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">زُر مكتبنا الرئيسي في الرياض لحلول متكاملة لمكافحة الحرائق</p>
+    </div>
+
+    <!-- Map Container Card -->
+    <div class="animate-on-scroll fade-up">
+      <div class="relative p-4 md:p-6 rounded-2xl bg-white border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-500">
+        
+        <!-- Address Bar (Above Map) -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6 px-2">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-fire-100 flex items-center justify-center text-fire-600">
+              <i class="fas fa-map-pin text-xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-gray-800 text-lg">شركة سيفتي ايكون لمكافحة الحرائق</h3>
+              <p class="text-gray-500 text-sm flex items-center gap-1">
+                <i class="fas fa-location-dot text-fire-500 text-xs"></i> 
+                الرياض، المملكة العربية السعودية
+              </p>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=شركة+سيفتي+ايكون+لمكافحة+الحرائق+الرياض" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-fire-50 hover:bg-fire-100 text-fire-700 px-5 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 border border-fire-200">
+            <i class="fas fa-external-link-alt text-xs"></i>
+            <span>فتح في خرائط جوجل</span>
+          </a>
+        </div>
+
+        <!-- The Map Iframe -->
+        <div class="relative w-full rounded-xl overflow-hidden border border-gray-200 shadow-inner" style="height: 450px;">
+          <!-- Loading Placeholder (Blur effect) -->
+          <div class="absolute inset-0 bg-gray-200 animate-pulse z-0 flex items-center justify-center">
+            <div class="text-center">
+              <i class="fas fa-map text-4xl text-gray-400 mb-2"></i>
+              <p class="text-gray-500">جاري تحميل الخريطة...</p>
+            </div>
+          </div>
+          
+          <!-- Google Maps Iframe for Safety Icon Fire Fighting Company -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.746515377123!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba9d1c9c3d6e3a1!2z2KfZhNiz2KfZhdmK2Kkg2KfZhNmF2YbYr9iz2Kkg2YXYrdin2YHZg9ip!5e0!3m2!1sar!2seg!4v1700000000000!5m2!1sar!2seg" 
+            width="100%" 
+            height="100%" 
+            style="border:0; position: relative; z-index: 10;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="خريطة موقع شركة سيفتي ايكون لمكافحة الحرائق بالرياض"
+            class="w-full h-full"
+            onload="this.previousElementSibling.style.display='none'">
+          </iframe>
+        </div>
+
+        <!-- Map Footer / Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 text-center md:text-right">
+          <div class="flex items-center justify-center md:justify-start gap-3 bg-gray-50 p-4 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-fire-500/10 flex items-center justify-center text-fire-600">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500">ساعات العمل</p>
+              <p class="font-bold text-gray-800">السبت - الخميس: 8 ص - 10 م</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-3 bg-gray-50 p-4 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-fire-500/10 flex items-center justify-center text-fire-600">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500">اتصل بنا</p>
+              <p class="font-bold text-gray-800" dir="ltr">+966 50 000 0000</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center md:justify-start gap-3 bg-gray-50 p-4 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-fire-500/10 flex items-center justify-center text-fire-600">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500">البريد الإلكتروني</p>
+              <p class="font-bold text-gray-800 text-sm">info@safetyicon.sa</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glow effect border on hover -->
+        <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style="box-shadow: 0 0 0 2px rgba(220,38,38,0.1), 0 0 0 4px rgba(220,38,38,0.05);"></div>
+      </div>
+    </div>
+
+    <!-- Quick Actions Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mt-10 animate-on-scroll fade-up stagger-1">
+      <a href="https://maps.app.goo.gl/YourPlaceIDHere" target="_blank" class="inline-flex items-center gap-3 bg-fire-600 hover:bg-fire-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-fire-600/20 transition-all duration-300 hover:-translate-y-1">
+        <i class="fas fa-directions text-lg"></i>
+        <span>الحصول على الاتجاهات</span>
+      </a>
+      <a href="tel:+966500000000" class="inline-flex items-center gap-3 bg-white hover:bg-gray-50 text-gray-800 border border-gray-300 px-8 py-4 rounded-xl font-bold shadow-md transition-all duration-300 hover:-translate-y-1">
+        <i class="fas fa-headset text-fire-600 text-lg"></i>
+        <span>طلب معاينة مجانية</span>
+      </a>
+    </div>
+
+  </div>
+</section>
 
   <!-- ==================== FOOTER ==================== -->
    <footer class="bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
