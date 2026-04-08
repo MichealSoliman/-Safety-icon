@@ -411,15 +411,15 @@
               <span class="text-fire-600 font-bold text-sm tracking-widest uppercase animate-pulse">من نحن</span>
               <div class="w-12 h-0.5 bg-gradient-to-l from-fire-600 to-transparent"></div>
             </div>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-4 leading-tight">
-              <span class="block">سيفتي ايكون </span>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-fire-600 to-ember-500">لحماية الأرواح والممتلكات</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl  font-black text-gray-900 mb-4 leading-tight">
+              <span class="block py-3">سيفتي ايكون </span>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-fire-600 to-ember-500 py-3">لحماية الأرواح والممتلكات</span>
             </h2>
           </div>
           
           <!-- Company Description -->
           <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            <span class="font-bold text-fire-600 text-xl">سيفتي ايكون </span> لمكافحة الحرائق هي شركة رائدة ومتخصصة في تقديم أحدث حلول وأنظمة مكافحة الحرائق والحماية من الحريق في الرياض وجميع أنحاء المملكة العربية السعودية.
+            <span class="font-bold text-fire-600 text-xl py">سيفتي ايكون </span> لمكافحة الحرائق هي شركة رائدة ومتخصصة في تقديم أحدث حلول وأنظمة مكافحة الحرائق والحماية من الحريق في الرياض وجميع أنحاء المملكة العربية السعودية.
           </p>
           
           <p class="text-gray-600 leading-relaxed mb-8">
@@ -1314,8 +1314,31 @@
   });
 </script>
 
-<!-- ==================== OUR PARTNERS (STATIC GRID - NO SCROLL) ==================== -->
-<section class="py-20 md:py-28 relative overflow-hidden bg-white" style="direction: rtl;">
+<!-- ==================== OUR PARTNERS (CONTINUOUS SCROLL) ==================== -->
+<style>
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+
+  /* Pause animation on hover */
+  .marquee-container:hover .animate-scroll {
+    animation-play-state: paused;
+  }
+
+  /* Ensure the logos are sized correctly within the marquee */
+  .partner-logo-item {
+    flex: 0 0 auto;
+    width: 180px; /* Adjust width as needed */
+    margin: 0 12px;
+  }
+</style>
+
+<section class="py-20 md:py-28 relative overflow-hidden bg-white" style="direction: ltr;">
   <!-- Background Abstract Elements -->
   <div class="absolute inset-0 pointer-events-none">
     <div class="absolute inset-0 opacity-[0.02]" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23dc2626\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -1323,10 +1346,9 @@
     <div class="absolute -bottom-64 -right-64 w-[500px] h-[500px] bg-amber-500/10 rounded-full blur-[120px]"></div>
   </div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    
+  <div class="relative z-10" style="direction: rtl;">
     <!-- Section Header -->
-    <div class="text-center mb-16 animate-on-scroll fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16 animate-on-scroll fade-up">
       <div class="inline-flex items-center gap-2 bg-fire-50 px-5 py-2 rounded-full border border-fire-200 mb-6 shadow-sm">
         <span class="relative flex h-2 w-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-fire-400 opacity-75"></span>
@@ -1348,138 +1370,161 @@
       </p>
     </div>
 
-    <!-- ✅ Static Grid Layout (No Scroll) - الصف الأول -->
-    <div class="mb-12 animate-on-scroll fade-up stagger-1">
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center items-center">
-        
-        <!-- Partner 1 - Aramco -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-fire-300 group-hover:shadow-xl transition-all">
-            <div class="absolute inset-0 bg-gradient-to-br from-fire-50/50 to-amber-50/50 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity"></div>
-            <img src="./img/partner (1).jpeg" 
-                 alt="شعار أرامكو" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23dc2626\' text-anchor=\'middle\'%3Eأرامكو%3C/text%3E%3C/svg%3E'">
+    <!-- ✅ Continuous Scrolling Marquee -->
+    <div class="marquee-container relative flex overflow-hidden py-4">
+      <!-- We use two identical lists to create the seamless infinite loop effect -->
+      <div class="flex animate-scroll whitespace-nowrap">
+        <!-- Original List of Partners -->
+        <div class="flex items-center">
+          <!-- Partner 1 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-fire-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (1).jpeg" alt="شعار أرامكو" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23dc2626\' text-anchor=\'middle\'%3Eأرامكو%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-        
-        <!-- Partner 2 - SABIC -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-amber-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (1).png" 
-                 alt="شعار سابك" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23d97706\' text-anchor=\'middle\'%3Eسابك%3C/text%3E%3C/svg%3E'">
+          <!-- Partner 2 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-amber-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (1).png" alt="شعار سابك" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23d97706\' text-anchor=\'middle\'%3Eسابك%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-
-        <!-- Partner 3 - Ministry of Interior (MOI) -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-green-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (1).webp" 
-                 alt="شعار وزارة الداخلية" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%231f2937\' text-anchor=\'middle\'%3Eوزارة الداخلية%3C/text%3E%3C/svg%3E'">
+          <!-- Partner 3 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-green-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (1).webp" alt="شعار وزارة الداخلية" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%231f2937\' text-anchor=\'middle\'%3Eوزارة الداخلية%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-
-        <!-- Partner 4 - Almarai -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-sky-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (2).jpeg" 
-                 alt="شعار المراعي" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23028db9\' text-anchor=\'middle\'%3Eالمراعي%3C/text%3E%3C/svg%3E'">
+          <!-- Partner 4 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-sky-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (2).jpeg" alt="شعار المراعي" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23028db9\' text-anchor=\'middle\'%3Eالمراعي%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-
-        <!-- Partner 5 - STC -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-purple-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (3).jpeg" 
-                 alt="شعار STC" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%237c3aed\' text-anchor=\'middle\'%3E STC %3C/text%3E%3C/svg%3E'">
+          <!-- Partner 5 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-purple-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (3).jpeg" alt="شعار STC" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%237c3aed\' text-anchor=\'middle\'%3E STC %3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-
-        <!-- Partner 6 - Riyadh Bank -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-emerald-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (4).jpeg" 
-                 alt="شعار بنك الرياض" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23047a6d\' text-anchor=\'middle\'%3Eبنك الرياض%3C/text%3E%3C/svg%3E'">
+          <!-- Partner 6 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-emerald-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (4).jpeg" alt="شعار بنك الرياض" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23047a6d\' text-anchor=\'middle\'%3Eبنك الرياض%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ✅ الصف الثاني (شعارات إضافية) -->
-    <div class="mb-12 animate-on-scroll fade-up stagger-2">
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center items-center">
-        
-        <!-- Partner 7 - King Saud University -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-blue-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (5).jpeg" 
-                 alt="جامعة الملك سعود" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%232563eb\' text-anchor=\'middle\'%3Eجامعة الملك سعود%3C/text%3E%3C/svg%3E'">
+          <!-- Partner 7 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-blue-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (5).jpeg" alt="جامعة الملك سعود" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%232563eb\' text-anchor=\'middle\'%3Eجامعة الملك سعود%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
-        </div>
-
-        <!-- Partner 8 - Al Rajhi Bank -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-cyan-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (6).jpeg" 
-                 alt="مصرف الراجحي" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%2306b6d4\' text-anchor=\'middle\'%3Eمصرف الراجحي%3C/text%3E%3C/svg%3E'">
+          <!-- Partner 8 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-cyan-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (6).jpeg" alt="مصرف الراجحي" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%2306b6d4\' text-anchor=\'middle\'%3Eمصرف الراجحي%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 9 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-indigo-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (2).png" alt="موبايلي" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%234f46e5\' text-anchor=\'middle\'%3Eموبايلي%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 10 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-orange-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (3).png" alt="نسما" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23ea580c\' text-anchor=\'middle\'%3Eنسما%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 11 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-green-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (4).png" alt="بندة" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%2316a34a\' text-anchor=\'middle\'%3Eبنده%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 12 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-sky-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (7).jpeg" alt="الخطوط السعودية" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23038db9\' text-anchor=\'middle\'%3Eالخطوط السعودية%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
         </div>
 
-        <!-- Partner 9 - Mobily -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-indigo-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (2).png" 
-                 alt="موبايلي" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%234f46e5\' text-anchor=\'middle\'%3Eموبايلي%3C/text%3E%3C/svg%3E'">
+        <!-- Duplicate List for seamless loop -->
+        <div class="flex items-center">
+          <!-- Partner 1 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-fire-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (1).jpeg" alt="شعار أرامكو" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23dc2626\' text-anchor=\'middle\'%3Eأرامكو%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 2 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-amber-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (1).png" alt="شعار سابك" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23d97706\' text-anchor=\'middle\'%3Eسابك%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 3 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-green-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (1).webp" alt="شعار وزارة الداخلية" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%231f2937\' text-anchor=\'middle\'%3Eوزارة الداخلية%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 4 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-sky-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (2).jpeg" alt="شعار المراعي" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23028db9\' text-anchor=\'middle\'%3Eالمراعي%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 5 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-purple-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (3).jpeg" alt="شعار STC" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%237c3aed\' text-anchor=\'middle\'%3E STC %3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 6 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-emerald-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (4).jpeg" alt="شعار بنك الرياض" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23047a6d\' text-anchor=\'middle\'%3Eبنك الرياض%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 7 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-blue-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (5).jpeg" alt="جامعة الملك سعود" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%232563eb\' text-anchor=\'middle\'%3Eجامعة الملك سعود%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 8 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-cyan-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (6).jpeg" alt="مصرف الراجحي" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%2306b6d4\' text-anchor=\'middle\'%3Eمصرف الراجحي%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 9 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-indigo-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (2).png" alt="موبايلي" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%234f46e5\' text-anchor=\'middle\'%3Eموبايلي%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 10 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-orange-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (3).png" alt="نسما" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23ea580c\' text-anchor=\'middle\'%3Eنسما%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 11 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-green-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (4).png" alt="بندة" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%2316a34a\' text-anchor=\'middle\'%3Eبنده%3C/text%3E%3C/svg%3E'">
+            </div>
+          </div>
+          <!-- Partner 12 -->
+          <div class="partner-logo-item group transition-all duration-500 hover:scale-110">
+            <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-sky-300 group-hover:shadow-xl transition-all">
+              <img src="./img/partner (7).jpeg" alt="الخطوط السعودية" class="relative z-10 w-full h-full object-contain filter  group-hover:grayscale-0 transition-all duration-500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23038db9\' text-anchor=\'middle\'%3Eالخطوط السعودية%3C/text%3E%3C/svg%3E'">
+            </div>
           </div>
         </div>
-
-        <!-- Partner 10 - NESMA -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-orange-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (3).png" 
-                 alt="نسما" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23ea580c\' text-anchor=\'middle\'%3Eنسما%3C/text%3E%3C/svg%3E'">
-          </div>
-        </div>
-
-        <!-- Partner 11 - Panda -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-green-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (4).png" 
-                 alt="بندة" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%2316a34a\' text-anchor=\'middle\'%3Eبنده%3C/text%3E%3C/svg%3E'">
-          </div>
-        </div>
-
-        <!-- Partner 12 - Saudia Airlines -->
-        <div class="partner-logo group w-full transition-all duration-500 hover:scale-110">
-          <div class="relative w-full aspect-[4/3] bg-white rounded-2xl border border-gray-200 shadow-md flex items-center justify-center p-4 group-hover:border-sky-300 group-hover:shadow-xl transition-all">
-            <img src="./img/partner (7).jpeg" 
-                 alt="الخطوط السعودية" 
-                 class="relative z-10 w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500"
-                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'40\' viewBox=\'0 0 120 40\'%3E%3Crect width=\'120\' height=\'40\' fill=\'%23f3f4f6\'/%3E%3Ctext x=\'60\' y=\'25\' font-family=\'Arial\' font-size=\'14\' font-weight=\'bold\' fill=\'%23038db9\' text-anchor=\'middle\'%3Eالخطوط السعودية%3C/text%3E%3C/svg%3E'">
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -1495,6 +1540,9 @@
     </div>
   </div>
 </section>
+
+
+
 
   <!-- ==================== CONTACT SECTION (WHITE BACKGROUND) ==================== -->
   <section id="contact" class="py-24 relative overflow-hidden white-section" style="background-color: #ffffff !important;">
@@ -1523,7 +1571,7 @@
             <div>
               <div class="text-gray-900 font-bold text-lg">اتصل بنا</div>
               <div class="text-gray-600 mt-1">0599908498</div>
-              <div class="text-gray-600">0599908498</div>
+             
             </div>
           </div>
 
@@ -1702,7 +1750,7 @@
             </div>
             <div>
               <p class="text-xs text-gray-500">ساعات العمل</p>
-              <p class="font-bold text-gray-800">السبت - الخميس: 8 ص - 10 م</p>
+              <p class="font-bold text-gray-800">السبت - الخميس: 8 ص - 8 م</p>
             </div>
           </div>
           <div class="flex items-center justify-center gap-3 bg-gray-50 p-4 rounded-xl">
@@ -1711,7 +1759,7 @@
             </div>
             <div>
               <p class="text-xs text-gray-500">اتصل بنا</p>
-              <p class="font-bold text-gray-800" dir="ltr">+966 50 000 0000</p>
+              <p class="font-bold text-gray-800" dir="ltr">0599908498</p>
             </div>
           </div>
           <div class="flex items-center justify-center md:justify-start gap-3 bg-gray-50 p-4 rounded-xl">
